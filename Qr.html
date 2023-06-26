@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport"
+		content="width=device-width,
+						initial-scale=1.0" />
+	<title>QR Code Generator</title>
+	
+	<style>
+		h1, h3 {
+		color: rgb(187, 34, 187);
+		}
+		body, header {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		}
+	</style>
+	<script src=
+"https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js">
+	</script>
+</head>
+
+<body>
+	<header>
+		<h1>Scan to Know</h1>
+		<h3>QR code generator</h3>
+		<h3>To visit my Whatsapp</h3>
+	</header>
+	<main>
+		<div id="qrcode"></div>
+	</main>
+	
+	<script>
+		var qrcode = new QRCode("qrcode",
+		"https://web.whatsapp.com");
+	</script>
+</body>
+
+</html>
